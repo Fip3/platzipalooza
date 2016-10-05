@@ -137,6 +137,12 @@ h1, h2, h3, h4, h5, h6, button, input[type="submit"] {
   color: #ffcddc;
 }
 
-#suscribete-container input[type="button"] {
+#suscribete-container .error-container  {
   font-family: 'Bree Serif', serif;
+  color: lightgrey;
+}
+
+.is-invalid-input:not(:focus) {
+  background-color: rgb(255, 228, 228);
+  border-color: rgb(255, 228, 228);
 }
