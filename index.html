@@ -38,19 +38,21 @@
     
     <!-- MENU -->
     <section id="menu-container" >
-      <ul class="menu dropdown align-spaced" data-dropdown-menu>
-        <li><a href="#">Tickets</a></li>
-        <li>
-          <a href="#">Lineup</a>
-          <ul id="submenu-container" class="menu">
-            <li><a href="#">Viernes</a></li>
-            <li><a href="#">Sábado</a></li>
-            <li><a href="#">Domingo</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Info</a></li>
-        <li><a href="#">Suscríbete</a></li>
-      </ul>
+      <nav data-magellan>
+        <ul class="menu dropdown align-spaced" data-dropdown-menu>
+          <li><a href="#tickets-container">Tickets</a></li>
+          <li>
+            <a href="#lineup-container">Lineup</a>
+            <ul id="submenu-container" class="menu">
+              <li><a href="#">Viernes</a></li>
+              <li><a href="#">Sábado</a></li>
+              <li><a href="#">Domingo</a></li>
+            </ul>
+          </li>
+          <li><a href="#suscribete-container">Suscríbete</a></li>
+          <li><a href="#info-container">Info</a></li>
+        </ul>
+      </nav>        
     </section>
     <!-- /MENU -->
 
@@ -65,7 +67,7 @@
     <!-- /TICKETS -->
 
     <!-- LINEUP -->
-    <section id="lineup-container">
+    <section id="lineup-container" data-magellan-target="lineup-container">
       <h3 class="text-center">Lineup</h3>
       <ul class="tabs text-center" data-tabs id="lineup-tabs">
         <li class="tabs-title is-active">
@@ -192,7 +194,7 @@
     <!-- /LINEUP -->
 
     <!-- VENTA -->
-    <section id="tickets-container">
+    <section id="tickets-container" data-magellan-target="tickets-container">
       <h2 class="text-center">Comprar Abonos</h2>
       <div class="row" data-equalizer data-equalize-on="small">
         <div class="column small-10 medium-6 small-offset-1 medium-offset-3">
@@ -236,7 +238,7 @@
     <!-- /VENTA -->
 
     <!-- SUSCRIPCION -->
-    <section id="suscribete-container">
+    <section id="suscribete-container" data-magellan-target="suscribete-container">
       <h3 class="text-center">Suscríbete</h3>
       <h4 class="text-center"><small>Y recibe las últimas novedades de Platzipalooza</small></h4>
       <form action="" method="" novalidate data-abide>
@@ -257,7 +259,7 @@
     <!-- /SUSCRIPCION -->
 
     <!-- INFO -->
-    <section id="info-container">
+    <section id="info-container" data-magellan-target="info-container">
       <h3 class="text-center">Información</h3>
       <div class="info-map text-center" data-interchange="[assets/map-small.html, small], [assets/map.html, medium]"></div>
     </section>
