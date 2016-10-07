@@ -12,262 +12,293 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <!-- SOCIAL -->
-    <section id="social-container">
-      <div class="row align-center text-center">
-        <div class="small-1 column">
-          <a href="#" target="_blank"><i class="fi-social-facebook"></i></a>
-        </div>
-        <div class="small-1 column">
-          <a href="#" target="_blank"><i class="fi-social-twitter"></i></a>
-        </div>
-        <div class="small-1 column">
-          <a href="#" target="_blank"><i class="fi-social-instagram"></i></a>
-        </div>
-      </div>
-    </section>
-    <!-- /SOCIAL -->
 
-    <!-- LOGO -->
-    <section id="logo-container">
-      <div class="callout text-center">
-        <h1>Platzipalooza</h1>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+        <div id="offCanvas" class="off-canvas position-left" data-off-canvas>
+          <nav data-magellan>
+            <ul class="vertical menu" data-drilldown>
+              <li><a href="#tickets-container">Tickets</a></li>
+              <li>
+                <a href="#lineup-container">Lineup</a>
+                <ul class="vertical menu">
+                  <li><a data-toggle-dia="panelViernes" href="#lineup-container">Viernes</a></li>
+                  <li><a data-toggle-dia="panelSabado" href="#lineup-container">Sábado</a></li>
+                  <li><a data-toggle-dia="panelDomingo" href="#lineup-container">Domingo</a></li>
+                </ul>
+              </li>
+              <li><a href="#suscribete-container">Suscríbete</a></li>
+              <li><a href="#info-container">Info</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- SOCIAL -->
+          <section id="social-container">
+            <div class="row align-center text-center">
+              <div class="small-1 column">
+                <a href="#" target="_blank"><i class="fi-social-facebook"></i></a>
+              </div>
+              <div class="small-1 column">
+                <a href="#" target="_blank"><i class="fi-social-twitter"></i></a>
+              </div>
+              <div class="small-1 column">
+                <a href="#" target="_blank"><i class="fi-social-instagram"></i></a>
+              </div>
+            </div>
+          </section>
+          <!-- /SOCIAL -->
+
+          <!-- LOGO -->
+          <section id="logo-container">
+            <div class="callout text-center">
+              <h1>Platzipalooza</h1>
+            </div>
+          </section>
+          <!-- /LOGO -->
+          
+          <!-- MENU -->
+          <section id="scrollSticky" data-sticky-container>
+            <div class="data-sticky" id="sticky" data-sticky data-options="marginTop:0;" data-sticky-on="small" data-top-anchor="scrollSticky">
+              <nav data-magellan id="menu-container">
+                <ul class="menu align-spaced show-for-small-only">
+                  <li>
+                    <a href="#" data-toggle="offCanvas">Menu</a>
+                  </li>
+                </ul>
+                <ul class="menu dropdown align-spaced show-for-medium" data-dropdown-menu>
+                  <li><a href="#tickets-container">Tickets</a></li>
+                  <li>
+                    <a href="#lineup-container">Lineup</a>
+                    <ul id="submenu-container" class="menu">
+                      <li><a data-toggle-dia="panelViernes" href="#lineup-container">Viernes</a></li>
+                      <li><a data-toggle-dia="panelSabado" href="#lineup-container">Sábado</a></li>
+                      <li><a data-toggle-dia="panelDomingo" href="#lineup-container">Domingo</a></li> -->
+                    </ul>
+                  </li>
+                  <li><a href="#suscribete-container">Suscríbete</a></li>
+                  <li><a href="#info-container">Info</a></li>
+                </ul>
+              </nav>        
+            </div>
+          </section>
+          <!-- /MENU -->
+
+          <!-- TICKETS -->
+          <section id="tickets-action">
+            <div class="callout large text-center">
+              <a href="#">
+                <button class="hollow button large">Comprar Tickets</button>
+              </a>
+            </div>
+          </section>
+          <!-- /TICKETS -->
+
+          <!-- LINEUP -->
+          <section id="lineup-container" data-magellan-target="lineup-container">
+            <h3 class="text-center">Lineup</h3>
+            <ul class="tabs text-center" data-tabs id="lineup-tabs">
+              <li class="tabs-title is-active">
+                <a href="#panelViernes">Viernes</a>
+              </li>
+              <li class="tabs-title">
+                <a href="#panelSabado">Sabado</a>
+              </li>
+              <li class="tabs-title">
+                <a href="#panelDomingo">Domingo</a>
+              </li>
+            </ul>
+            <div class="tabs-content" data-tabs-content="lineup-tabs">
+              <div class="tabs-panel is-active" id="panelViernes">
+                <div class="row">
+                  <div class="column small-12 medium-6">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img src="http://media2.wcpo.com/photo/2016/02/25/WCPO_florence_and_the_Machine_1456413625767_32544148_ver1.0_640_480.jpg" class="orbit-image" alt="Florence + The Machine">
+                        <figcaption class="orbit-caption">Florence + The Machine</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column small-12 medium-6">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img src="http://static.idolator.com/uploads/2012/04/20/Lana-Del-Rey-promo-shoot-640x480.jpg" class="orbit-image" alt="Lana del Rey">
+                        <figcaption class="orbit-caption">Lana del Rey</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column small-12 medium-6">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img src="http://www.hindustantimes.com/rf/image_size_640x362/HT/p2/2016/08/22/Pictures/sia_35b190ec-6832-11e6-8382-bd2fa398f652.jpg" class="orbit-image" alt="Sia">
+                        <figcaption class="orbit-caption">Sia</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column small-12 medium-6">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img src="http://www.hindustantimes.com/rf/image_size_640x362/HT/p1/2013/02/22/Incoming/Pictures/1015841_Wallpaper2.jpg" class="orbit-image" alt="Norah Jones">
+                        <figcaption class="orbit-caption">Norah Jones</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-panel" id="panelSabado">
+                <div class="row">
+                  <div class="column small-12 medium-6">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img src="http://4kwallpapershd.com/wp-content/uploads/2016/08/Bruno-Mars-Images-640x480.jpg" class="orbit-image" alt="Bruno Mars">
+                        <figcaption class="orbit-caption">Bruno Mars</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column small-12 medium-6">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img src="http://static.quizur.com/i/b/57713f5cebce97.5390506353b45a510d274---cos-01-ed-sheeran-xl.jpg" class="orbit-image" alt="Ed Sheeran">
+                        <figcaption class="orbit-caption">Ed Sheeran</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column small-12 medium-6">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img src="http://clcdn02.mundotkm.com/2015/12/michael-buble.jpg" class="orbit-image" alt="Michael Bublé">
+                        <figcaption class="orbit-caption">Michael Bublé</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column small-12 medium-6">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img src="http://www.inthestudio.net/wp-content/uploads/2015/03/BILLY-JOEL-image_xlimage_2010_03_R8123_BILLY_JOEL_BUYS_IN_NOLITA.jpg" class="orbit-image" alt="Billy Joel">
+                        <figcaption class="orbit-caption">Billy Joel</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-panel" id="panelDomingo">
+                <div class="row">
+                  <div class="column small-12 medium-6">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img src="http://d22ir9aoo7cbf6.cloudfront.net/wp-content/uploads/sites/2/2015/12/OMAM-PRESS-1.jpg" alt="Of Monsters and Men">
+                        <figcaption class="orbit-caption">Of Monsters and Men</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column small-12 medium-6">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img src="http://www.bringthenoiseuk.com/wordpress/wp-content/uploads/thesmashingpumpkins.jpg" alt="The Smashing Pumpkins">
+                        <figcaption class="orbit-caption">The Smashing Pumpkins</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column small-12 medium-6">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img src="http://www.educacionenred.pe/noticia-img/2011/07/008742-foto-precios-entrada-pearl-jam-lima-peru.jpg" alt="Pearl Jam">
+                        <figcaption class="orbit-caption">Pearl Jam</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column small-12 medium-6">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <img src="http://www.sopitas.com/wp-content/uploads/2013/07/cure.jpg" alt="The Cure">
+                        <figcaption class="orbit-caption">The Cure</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- /LINEUP -->
+
+          <!-- VENTA -->
+          <section id="tickets-container" data-magellan-target="tickets-container">
+            <h2 class="text-center">Comprar Abonos</h2>
+            <div class="row" data-equalizer data-equalize-on="small">
+              <div class="column small-10 medium-6 small-offset-1 medium-offset-3">
+                <ul class="pricing-table no-bullet text-center">
+                  <li class="title">VIP</li>
+                  <li class="price">$500</li>
+                  <li class="description">Acceso a Todos los días</li>
+                  <li>Buffet de Comida</li>
+                  <li>Estacionamiento cubierto</li>
+                  <li>Acceso a Backstage</li>
+                  <li>Sorteo para fiesta Pos-evento con los artistas</li>
+                  <li><a class="button" href="#">Compra VIP</a></li>
+                </ul>
+              </div>
+              <div class="column small-6 medium-4 medium-offset-2">
+                <ul class="pricing-table no-bullet text-center">
+                  <li class="title">Oro</li>
+                  <li class="price">$300</li>
+                  <li class="description">Acceso a Todos los días</li>
+                  <li data-equalizer-watch>Barra abierta de Snacks</li>
+                  <li data-equalizer-watch>Estacionamiento descubierto</li>
+                  <li data-equalizer-watch>Sorteo para acceso a Backstage</li>
+                  <li>--</li>
+                  <li><a class="button" href="#">Compra Oro</a></li>
+                </ul>
+              </div>
+              <div class="column small-6 medium-4">
+                <ul class="pricing-table no-bullet text-center">
+                  <li class="title">Plata</li>
+                  <li class="price">$200</li>
+                  <li class="description">Acceso a Todos los días</li>
+                  <li data-equalizer-watch>Incluye 2 colaciones</li>
+                  <li data-equalizer-watch>--</li>
+                  <li data-equalizer-watch>--</li>
+                  <li>--</li>
+                  <li><a class="button" href="#">Compra Plata</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- /VENTA -->
+
+          <!-- SUSCRIPCION -->
+          <section id="suscribete-container" data-magellan-target="suscribete-container">
+            <h3 class="text-center">Suscríbete</h3>
+            <h4 class="text-center"><small>Y recibe las últimas novedades de Platzipalooza</small></h4>
+            <form action="" method="" novalidate data-abide>
+              <div class="row columns small-12 medium-6">
+                <div class="input-group">
+                  <span class="input-group-label"><i class="fi-mail"></i></span>
+                  <input type="email" name="email" class="input-group-field" placeholder="tu@correo.com" required>
+                  <div class="input-group-button">
+                    <input type="submit" class="button" value="Suscribirse">
+                  </div>
+                </div>
+              </div>
+              <div data-abide-error class="row columns small-12 medium-6 text-center error-container" style="display: none;">
+                <p><i class="fi-alert"></i> Ingrese un correo electrónico válido</p>
+              </div>
+            </form>
+          </section>
+          <!-- /SUSCRIPCION -->
+
+          <!-- INFO -->
+          <section id="info-container" data-magellan-target="info-container">
+            <h3 class="text-center">Información</h3>
+            <div class="info-map text-center" data-interchange="[assets/map-small.html, small], [assets/map.html, medium]"></div>
+          </section>
+          <!-- /INFO -->
+        </div>
+
       </div>
-    </section>
-    <!-- /LOGO -->
+    </div>
     
-    <!-- MENU -->
-    <section id="scrollSticky" data-sticky-container>
-      <div class="data-sticky" data-sticky data-options="marginTop:0;" data-sticky-on="small" data-top-anchor="scrollSticky">
-        <nav data-magellan id="menu-container">
-          <ul class="menu dropdown align-spaced" data-dropdown-menu>
-            <li><a href="#tickets-container">Tickets</a></li>
-            <li>
-              <a href="#lineup-container">Lineup</a>
-              <ul id="submenu-container" class="menu">
-                <li><a data-toggle-dia="panelViernes" href="#lineup-container">Viernes</a></li>
-                <li><a data-toggle-dia="panelSabado" href="#lineup-container">Sábado</a></li>
-                <li><a data-toggle-dia="panelDomingo" href="#lineup-container">Domingo</a></li>
-              </ul>
-            </li>
-            <li><a href="#suscribete-container">Suscríbete</a></li>
-            <li><a href="#info-container">Info</a></li>
-          </ul>
-        </nav>        
-      </div>
-    </section>
-    <!-- /MENU -->
-
-    <!-- TICKETS -->
-    <section id="tickets-action">
-      <div class="callout large text-center">
-        <a href="#">
-          <button class="hollow button large">Comprar Tickets</button>
-        </a>
-      </div>
-    </section>
-    <!-- /TICKETS -->
-
-    <!-- LINEUP -->
-    <section id="lineup-container" data-magellan-target="lineup-container">
-      <h3 class="text-center">Lineup</h3>
-      <ul class="tabs text-center" data-tabs id="lineup-tabs">
-        <li class="tabs-title is-active">
-          <a href="#panelViernes">Viernes</a>
-        </li>
-        <li class="tabs-title">
-          <a href="#panelSabado">Sabado</a>
-        </li>
-        <li class="tabs-title">
-          <a href="#panelDomingo">Domingo</a>
-        </li>
-      </ul>
-      <div class="tabs-content" data-tabs-content="lineup-tabs">
-        <div class="tabs-panel is-active" id="panelViernes">
-          <div class="row">
-            <div class="column small-12 medium-6">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img src="http://media2.wcpo.com/photo/2016/02/25/WCPO_florence_and_the_Machine_1456413625767_32544148_ver1.0_640_480.jpg" class="orbit-image" alt="Florence + The Machine">
-                  <figcaption class="orbit-caption">Florence + The Machine</figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="column small-12 medium-6">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img src="http://static.idolator.com/uploads/2012/04/20/Lana-Del-Rey-promo-shoot-640x480.jpg" class="orbit-image" alt="Lana del Rey">
-                  <figcaption class="orbit-caption">Lana del Rey</figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="column small-12 medium-6">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img src="http://www.hindustantimes.com/rf/image_size_640x362/HT/p2/2016/08/22/Pictures/sia_35b190ec-6832-11e6-8382-bd2fa398f652.jpg" class="orbit-image" alt="Sia">
-                  <figcaption class="orbit-caption">Sia</figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="column small-12 medium-6">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img src="http://www.hindustantimes.com/rf/image_size_640x362/HT/p1/2013/02/22/Incoming/Pictures/1015841_Wallpaper2.jpg" class="orbit-image" alt="Norah Jones">
-                  <figcaption class="orbit-caption">Norah Jones</figcaption>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tabs-panel" id="panelSabado">
-          <div class="row">
-            <div class="column small-12 medium-6">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img src="http://4kwallpapershd.com/wp-content/uploads/2016/08/Bruno-Mars-Images-640x480.jpg" class="orbit-image" alt="Bruno Mars">
-                  <figcaption class="orbit-caption">Bruno Mars</figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="column small-12 medium-6">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img src="http://static.quizur.com/i/b/57713f5cebce97.5390506353b45a510d274---cos-01-ed-sheeran-xl.jpg" class="orbit-image" alt="Ed Sheeran">
-                  <figcaption class="orbit-caption">Ed Sheeran</figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="column small-12 medium-6">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img src="http://clcdn02.mundotkm.com/2015/12/michael-buble.jpg" class="orbit-image" alt="Michael Bublé">
-                  <figcaption class="orbit-caption">Michael Bublé</figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="column small-12 medium-6">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img src="http://www.inthestudio.net/wp-content/uploads/2015/03/BILLY-JOEL-image_xlimage_2010_03_R8123_BILLY_JOEL_BUYS_IN_NOLITA.jpg" class="orbit-image" alt="Billy Joel">
-                  <figcaption class="orbit-caption">Billy Joel</figcaption>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tabs-panel" id="panelDomingo">
-          <div class="row">
-            <div class="column small-12 medium-6">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img src="http://d22ir9aoo7cbf6.cloudfront.net/wp-content/uploads/sites/2/2015/12/OMAM-PRESS-1.jpg" alt="Of Monsters and Men">
-                  <figcaption class="orbit-caption">Of Monsters and Men</figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="column small-12 medium-6">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img src="http://www.bringthenoiseuk.com/wordpress/wp-content/uploads/thesmashingpumpkins.jpg" alt="The Smashing Pumpkins">
-                  <figcaption class="orbit-caption">The Smashing Pumpkins</figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="column small-12 medium-6">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img src="http://www.educacionenred.pe/noticia-img/2011/07/008742-foto-precios-entrada-pearl-jam-lima-peru.jpg" alt="Pearl Jam">
-                  <figcaption class="orbit-caption">Pearl Jam</figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="column small-12 medium-6">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <img src="http://www.sopitas.com/wp-content/uploads/2013/07/cure.jpg" alt="The Cure">
-                  <figcaption class="orbit-caption">The Cure</figcaption>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /LINEUP -->
-
-    <!-- VENTA -->
-    <section id="tickets-container" data-magellan-target="tickets-container">
-      <h2 class="text-center">Comprar Abonos</h2>
-      <div class="row" data-equalizer data-equalize-on="small">
-        <div class="column small-10 medium-6 small-offset-1 medium-offset-3">
-          <ul class="pricing-table no-bullet text-center">
-            <li class="title">VIP</li>
-            <li class="price">$500</li>
-            <li class="description">Acceso a Todos los días</li>
-            <li>Buffet de Comida</li>
-            <li>Estacionamiento cubierto</li>
-            <li>Acceso a Backstage</li>
-            <li>Sorteo para fiesta Pos-evento con los artistas</li>
-            <li><a class="button" href="#">Compra VIP</a></li>
-          </ul>
-        </div>
-        <div class="column small-6 medium-4 medium-offset-2">
-          <ul class="pricing-table no-bullet text-center">
-            <li class="title">Oro</li>
-            <li class="price">$300</li>
-            <li class="description">Acceso a Todos los días</li>
-            <li data-equalizer-watch>Barra abierta de Snacks</li>
-            <li data-equalizer-watch>Estacionamiento descubierto</li>
-            <li data-equalizer-watch>Sorteo para acceso a Backstage</li>
-            <li>--</li>
-            <li><a class="button" href="#">Compra Oro</a></li>
-          </ul>
-        </div>
-        <div class="column small-6 medium-4">
-          <ul class="pricing-table no-bullet text-center">
-            <li class="title">Plata</li>
-            <li class="price">$200</li>
-            <li class="description">Acceso a Todos los días</li>
-            <li data-equalizer-watch>Incluye 2 colaciones</li>
-            <li data-equalizer-watch>--</li>
-            <li data-equalizer-watch>--</li>
-            <li>--</li>
-            <li><a class="button" href="#">Compra Plata</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- /VENTA -->
-
-    <!-- SUSCRIPCION -->
-    <section id="suscribete-container" data-magellan-target="suscribete-container">
-      <h3 class="text-center">Suscríbete</h3>
-      <h4 class="text-center"><small>Y recibe las últimas novedades de Platzipalooza</small></h4>
-      <form action="" method="" novalidate data-abide>
-        <div class="row columns small-12 medium-6">
-          <div class="input-group">
-            <span class="input-group-label"><i class="fi-mail"></i></span>
-            <input type="email" name="email" class="input-group-field" placeholder="tu@correo.com" required>
-            <div class="input-group-button">
-              <input type="submit" class="button" value="Suscribirse">
-            </div>
-          </div>
-        </div>
-        <div data-abide-error class="row columns small-12 medium-6 text-center error-container" style="display: none;">
-          <p><i class="fi-alert"></i> Ingrese un correo electrónico válido</p>
-        </div>
-      </form>
-    </section>
-    <!-- /SUSCRIPCION -->
-
-    <!-- INFO -->
-    <section id="info-container" data-magellan-target="info-container">
-      <h3 class="text-center">Información</h3>
-      <div class="info-map text-center" data-interchange="[assets/map-small.html, small], [assets/map.html, medium]"></div>
-    </section>
-    <!-- /INFO -->
-
-
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
